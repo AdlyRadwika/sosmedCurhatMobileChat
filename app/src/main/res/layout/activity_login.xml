@@ -12,13 +12,6 @@
         android:orientation="vertical"
         android:gravity="center">
 
-        <ImageView
-            android:id="@+id/logoSosmed"
-            android:layout_width="245dp"
-            android:layout_height="193dp"
-            android:layout_marginTop="128dp"
-            app:srcCompat="@mipmap/img_logo_sosmed" />
-
         <com.rengwuxian.materialedittext.MaterialEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

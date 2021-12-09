@@ -6,15 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".RegisterActivity">
 
-    <include
-        android:id="@+id/toolbar"
-        layout="@layout/bar_layout"/>
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:gravity="center_horizontal"
-        android:layout_below="@id/toolbar"
         android:padding="16dp"
         android:layout_height="wrap_content">
 
