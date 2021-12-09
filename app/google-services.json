@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "572565971481",
+    "project_id": "sosmedcurhatmobilechat",
+    "storage_bucket": "sosmedcurhatmobilechat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572565971481:android:9402fc1ac6416443150088",
+        "android_client_info": {
+          "package_name": "com.project.smmobilechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "572565971481-2ao9morsd9u9pfgti8h2lur718cn72j1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6iq1_LYoIidCJQIbmu-wfQXIkd8t21_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "572565971481-2ao9morsd9u9pfgti8h2lur718cn72j1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

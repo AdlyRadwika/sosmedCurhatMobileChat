@@ -25,7 +25,7 @@
             android:textSize="20sp"
             android:textStyle="bold"/>
 
-        <com.google.android.material.textfield.TextInputEditText
+        <com.rengwuxian.materialedittext.MaterialEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/username"
@@ -33,7 +33,7 @@
             app:met_floatingLabel="normal"
             android:hint="Username"/>
 
-        <com.google.android.material.textfield.TextInputEditText
+        <com.rengwuxian.materialedittext.MaterialEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/email"
@@ -42,7 +42,7 @@
             app:met_floatingLabel="normal"
             android:hint="Email"/>
 
-        <com.google.android.material.textfield.TextInputEditText
+        <com.rengwuxian.materialedittext.MaterialEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/password"

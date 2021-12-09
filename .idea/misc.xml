@@ -3,11 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/ASUS TUF/OneDrive/Documents/GitHub/sosmedCurhatMobileChat/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/ASUS TUF/OneDrive/Documents/GitHub/sosmedCurhatMobileChat/app/src/main/res/layout/activity_register.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/ASUS TUF/OneDrive/Documents/GitHub/sosmedCurhatMobileChat/app/src/main/res/layout/bar_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/activity_login2.xml" value="0.22" />
         <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/ASUS TUF/OneDrive/Documents/GitHub/sosmedCurhatMobileChat/app/src/main/res/layout/activity_login.xml" value="0.24295432458697766" />
+        <entry key="..\:/Users/ASUS TUF/OneDrive/Documents/GitHub/sosmedCurhatMobileChat/app/src/main/res/layout/activity_login2.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/ASUS TUF/OneDrive/Documents/GitHub/sosmedCurhatMobileChat/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ASUS TUF/OneDrive/Documents/GitHub/sosmedCurhatMobileChat/app/src/main/res/layout/activity_main2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ASUS TUF/OneDrive/Documents/GitHub/sosmedCurhatMobileChat/app/src/main/res/layout/activity_register.xml" value="0.2" />
+        <entry key="..\:/Users/ASUS TUF/OneDrive/Documents/GitHub/sosmedCurhatMobileChat/app/src/main/res/layout/bar_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ASUS TUF/OneDrive/Documents/GitHub/sosmedCurhatMobileChat/app/src/main/res/mipmap-anydpi-v26/ic_banner.xml" value="0.14635416666666667" />
       </map>
     </option>
   </component>
