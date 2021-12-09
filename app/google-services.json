@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "983194067640",
+    "firebase_url": "https://sosmedcurhatmobilechat-166c7-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "sosmedcurhatmobilechat-166c7",
+    "storage_bucket": "sosmedcurhatmobilechat-166c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:983194067640:android:f50d1cd5f4342b345b4a4d",
+        "android_client_info": {
+          "package_name": "com.project.smmobilechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "983194067640-jtn5ejb1p92q5f8cp7jo9gqmks9rbl2o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.smmobilechat",
+            "certificate_hash": "e2914075cdcc7d87774ae1b06c011ced5638bd33"
+          }
+        },
+        {
+          "client_id": "983194067640-luvv7579uij5k5mokdjbpuejjsk861rt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7gRBOVEy4UuMXn8S4oa0WYjTFb9haILo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "983194067640-luvv7579uij5k5mokdjbpuejjsk861rt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
