@@ -82,14 +82,12 @@ public class RegisterActivity extends AppCompatActivity {
                             String userid = firebaseUser.getUid();
 
 
-                            reference = FirebaseDatabase.getInstance().getReference();
+                            reference = FirebaseDatabase.getInstance("https://sosmedcurhatmobilechat-166c7-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("Users").child(userid);
 
                             HashMap<String, String> hashMap = new HashMap<>();
-                            //hashMap.put("id",userid);
+                            hashMap.put("id",userid);
                             hashMap.put("username", username);
-                            hashMap.put("email", email);
-                            hashMap.put("password", password);
-                           // hashMap.put("imageURL","default");
+                            hashMap.put("imageURL","default");
 
                             reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
