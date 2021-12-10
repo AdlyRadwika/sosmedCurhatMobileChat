@@ -82,25 +82,28 @@ public class RegisterActivity extends AppCompatActivity {
                             String userid = firebaseUser.getUid();
 
 
+
                             reference = FirebaseDatabase.getInstance("https://sosmedcurhatmobilechat-166c7-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("Users").child(userid);
+                            //reference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://sosmedcurhatmobilechat-166c7-default-rtdb.asia-southeast1.firebasedatabase.app/");
 
                             HashMap<String, String> hashMap = new HashMap<>();
                             hashMap.put("id",userid);
                             hashMap.put("username", username);
                             hashMap.put("imageURL","default");
 
-                            reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
-                                @Override
-                                public void onComplete(@NonNull Task<Void> task) {
-                                    if(task.isSuccessful()){
+                            reference.setValue(hashMap);
+
+
+
+                                        Toast.makeText(RegisterActivity.this, "Account successfully registered", Toast.LENGTH_SHORT).show();
                                         Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
                                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                                         startActivity(intent);
                                         finish();
-                                    }
 
-                                }
-                            });
+
+
+
                         } else {
                             Toast.makeText(RegisterActivity.this, "Error"+ task.getException().getMessage(), Toast.LENGTH_LONG).show();
                             System.out.println("Error"+ task.getException().getMessage());
