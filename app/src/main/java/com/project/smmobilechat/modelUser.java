@@ -5,6 +5,17 @@ public class modelUser {
     private String userName;
     private String userEmail;
     private String userPass;
+    private String userId;
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+
 
     public String getUserName() {
         return userName;
@@ -28,6 +39,12 @@ public class modelUser {
 
     public void setUserPass(String userPass) {
         this.userPass = userPass;
+    }
+
+    public modelUser(String userid,String username, String email){
+        this.userId = userid;
+        this.userName= username;
+        this.userEmail= email;
     }
 
 
