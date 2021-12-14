@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:gravity="center"
     android:orientation="vertical"
+    android:background="@color/browser_actions_bg_grey"
     android:layout_height="match_parent"
     tools:context=".StartActivity">
 
@@ -29,6 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/register"
+        android:layout_marginTop="10dp"
         android:text="register"/>
 
 </LinearLayout>
