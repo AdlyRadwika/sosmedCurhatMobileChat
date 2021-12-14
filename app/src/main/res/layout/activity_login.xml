@@ -39,11 +39,13 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="32dp"
+            android:layout_width="411dp"
+            android:layout_height="69dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="188dp"
-            android:text="Don't have an account?" />
+            android:onClick="toRegister"
+            android:text="Don't have an account? Click here"
+            android:textAlignment="center" />
 
     </LinearLayout>
 
