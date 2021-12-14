@@ -11,12 +11,14 @@
         android:theme="@style/Theme.SmMobileChat"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".MainActivity"
-            android:exported="false" />
+            android:name=".MainActivity"/>
         <activity android:name=".RegisterActivity"
             android:parentActivityName=".StartActivity"/>
         <activity android:name=".LoginActivity"
-            android:parentActivityName=".StartActivity"/>
+            android:exported="false">
+
+
+        </activity>
         <activity
             android:name=".StartActivity"
             android:exported="true">
@@ -25,6 +27,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
     <uses-permission android:name="android.permission.INTERNET"/>

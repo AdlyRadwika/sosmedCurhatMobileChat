@@ -17,6 +17,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.project.smmobilechat.Model.User;
 import com.rengwuxian.materialedittext.MaterialEditText;
 
 import java.util.HashMap;
@@ -65,7 +66,14 @@ public class RegisterActivity extends AppCompatActivity {
                                 FirebaseUser firebaseUser = auth.getCurrentUser();
                                 assert firebaseUser != null;
                                 String userid = firebaseUser.getUid();
-                                modelUser user = new modelUser(userid,txt_username, txt_email);
+                                String imageURL = "default";
+
+                                User user = new User(userid,txt_username, imageURL);
+
+//                                HashMap<String, String> hashMap = new HashMap<>();
+//                                hashMap.put("id", userid);
+//                                hashMap.put("username", txt_username);
+//                                hashMap.put("imageURL", "default");
 
                                 FirebaseDatabase.getInstance("https://sosmedcurhatmobilechat-166c7-default-rtdb.asia-southeast1.firebasedatabase.app/")
                                         .getReference("Users")
