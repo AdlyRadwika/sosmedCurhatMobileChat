@@ -48,6 +48,15 @@
             app:met_floatingLabel="normal"
             android:hint="Password"/>
 
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/confPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Password Confirmation"
+            android:inputType="textPassword"
+            app:met_floatingLabel="normal" />
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

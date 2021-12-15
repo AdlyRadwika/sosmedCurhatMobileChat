@@ -13,8 +13,13 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.appcheck.FirebaseAppCheck;
+import com.google.firebase.appcheck.safetynet.SafetyNetAppCheckProviderFactory;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.project.smmobilechat.Model.User;
 import com.rengwuxian.materialedittext.MaterialEditText;
 
 public class LoginActivity extends AppCompatActivity {
@@ -43,6 +48,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                     String txt_email = email.getText().toString();
                     String txt_password = password.getText().toString();
+
 
                     if(TextUtils.isEmpty(txt_email) || TextUtils.isEmpty(txt_password)){
                         Toast.makeText(LoginActivity.this, "All fields are required", Toast.LENGTH_SHORT).show();

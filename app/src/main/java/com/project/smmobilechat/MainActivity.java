@@ -17,6 +17,9 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.google.android.material.tabs.TabLayout;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.appcheck.FirebaseAppCheck;
+import com.google.firebase.appcheck.safetynet.SafetyNetAppCheckProviderFactory;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -40,10 +43,13 @@ public class MainActivity extends AppCompatActivity {
     FirebaseUser firebaseUser;
     DatabaseReference reference;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("");
@@ -72,6 +78,8 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+
 
         TabLayout tabLayout = findViewById(R.id.tab_layout);
         ViewPager viewPager = findViewById(R.id.view_pager);
