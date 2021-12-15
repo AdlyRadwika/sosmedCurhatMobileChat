@@ -55,10 +55,10 @@ public class RegisterActivity extends AppCompatActivity {
         btn_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String txt_username = username.getText().toString();
-                String txt_email = email.getText().toString();
-                String txt_password = password.getText().toString();
-                String confirm = confPass.getText().toString();
+                String txt_username = username.getText().toString().trim();
+                String txt_email = email.getText().toString().trim();
+                String txt_password = password.getText().toString().trim();
+                String confirm = confPass.getText().toString().trim();
 
                 if (txt_password.equals(confirm)){
                     if (TextUtils.isEmpty(txt_username) || TextUtils.isEmpty(txt_email) || TextUtils.isEmpty(txt_password)) {

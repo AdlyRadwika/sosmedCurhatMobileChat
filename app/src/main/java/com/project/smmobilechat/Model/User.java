@@ -4,6 +4,8 @@ public class User {
 
     private String id;
     private String username;
+    private String email;
+    private String password;
     private String imageURL;
 
     public User (String id, String username, String imageURL){
@@ -38,5 +40,21 @@ public class User {
 
     public void setImageURL(String imageURL) {
         this.imageURL = imageURL;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
