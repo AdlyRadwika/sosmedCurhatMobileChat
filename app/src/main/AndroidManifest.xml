@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.project.smmobilechat">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,14 +14,15 @@
         android:theme="@style/Theme.SmMobileChat"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".MainActivity"/>
-        <activity android:name=".RegisterActivity"
-            android:parentActivityName=".StartActivity"/>
-        <activity android:name=".LoginActivity"
-            android:exported="false">
-
-
-        </activity>
+            android:name=".MessageActivity"
+            android:exported="false" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".RegisterActivity"
+            android:parentActivityName=".StartActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"></activity>
         <activity
             android:name=".StartActivity"
             android:exported="true">
@@ -27,10 +31,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
 </manifest>
