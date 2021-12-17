@@ -77,6 +77,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                                     User user = new User(userid, txt_username, imageURL);
 
+
                                     FirebaseDatabase.getInstance("https://sosmedcurhatmobilechat-166c7-default-rtdb.asia-southeast1.firebasedatabase.app/")
                                             .getReference("Users")
                                             .child(userid)

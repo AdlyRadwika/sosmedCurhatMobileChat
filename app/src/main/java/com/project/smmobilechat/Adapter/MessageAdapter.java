@@ -1,10 +1,12 @@
 package com.project.smmobilechat.Adapter;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -14,9 +16,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.project.smmobilechat.EditActivity;
 import com.project.smmobilechat.MessageActivity;
 import com.project.smmobilechat.Model.Chat;
-import com.project.smmobilechat.Model.User;
 import com.project.smmobilechat.R;
 
 import java.util.List;
@@ -31,12 +33,13 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
     private String imageurl;
 
     FirebaseUser fuser;
+    FirebaseDataListener listener;
 
     public MessageAdapter(Context mContext, List<Chat> mChat, String imageurl){
         this.mContext = mContext;
         this.mChat = mChat;
         this.imageurl = imageurl;
-
+        listener = (MessageActivity)mContext;
 
     }
 
@@ -45,6 +48,7 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
     public MessageAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         if (viewType == MSG_TYPE_RIGHT) {
             View view = LayoutInflater.from(mContext).inflate(R.layout.chat_item_right, parent, false);
+
             return new MessageAdapter.ViewHolder(view);
         } else {
             View view = LayoutInflater.from(mContext).inflate(R.layout.chat_item_left, parent, false);
@@ -66,6 +70,44 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
             Glide.with(mContext).load(imageurl).into(holder.profile_image);
         }
 
+        if(getItemViewType(position) == MSG_TYPE_RIGHT) {
+
+            holder.show_message.setOnLongClickListener(new View.OnLongClickListener() {
+                @Override
+                public boolean onLongClick(View v) {
+
+                    final Dialog dialog = new Dialog(mContext);
+                    dialog.setContentView(R.layout.dialog_view);
+                    dialog.show();
+
+                    Button editButton = (Button) dialog.findViewById(R.id.bt_edit_data);
+                    Button delButton = (Button) dialog.findViewById(R.id.bt_delete_data);
+
+                    editButton.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            dialog.dismiss();
+
+                            //pindah ke activity edit
+                            Intent intent = new Intent(mContext, EditActivity.class);
+                            intent.putExtra("data", mChat.get(position));
+                            mContext.startActivity(intent);
+
+
+                        }
+                    });
+
+                    delButton.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            dialog.dismiss();
+                            listener.onDeleteData(mChat.get(position), position);
+                        }
+                    });
+                    return true;
+                }
+            });
+        }
     }
 
     @Override
@@ -96,5 +138,9 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
         } else {
             return MSG_TYPE_LEFT;
         }
+    }
+
+    public interface FirebaseDataListener{
+        void onDeleteData(Chat chat, int position);
     }
 }

@@ -1,10 +1,13 @@
 package com.project.smmobilechat.Model;
 
-public class Chat {
+import java.io.Serializable;
+
+public class Chat implements Serializable {
 
     private String sender;
     private String receiver;
     private String message;
+    private String key;
 
     public Chat(String sender, String receiver, String message) {
         this.sender = sender;
@@ -37,5 +40,13 @@ public class Chat {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
     }
 }
