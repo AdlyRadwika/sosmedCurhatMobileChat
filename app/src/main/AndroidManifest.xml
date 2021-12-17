@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
 
     <application
         android:allowBackup="true"
@@ -14,6 +16,9 @@
         android:theme="@style/Theme.SmMobileChat"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".EditActivity"
+            android:exported="false" />
+        <activity
             android:name=".MessageActivity"
             android:exported="false" />
         <activity android:name=".MainActivity" />
@@ -22,7 +27,7 @@
             android:parentActivityName=".StartActivity" />
         <activity
             android:name=".LoginActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".StartActivity"
             android:exported="true">

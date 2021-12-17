@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/drawable/background_left.xml" value="0.13020833333333334" />
+        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/drawable/background_right.xml" value="0.13020833333333334" />
+        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/activity_edit.xml" value="0.22" />
         <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/activity_login2.xml" value="0.33" />
         <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/activity_main.xml" value="0.33" />
@@ -10,6 +13,9 @@
         <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/activity_register.xml" value="0.25" />
         <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/activity_start.xml" value="0.18020833333333333" />
         <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/bar_layout.xml" value="0.18020833333333333" />
+        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/chat_item_left.xml" value="0.1140625" />
+        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/chat_item_right.xml" value="0.1140625" />
+        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/dialog_view.xml" value="0.33" />
         <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/fragment_users.xml" value="0.33" />
         <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/user_item.xml" value="0.25" />
         <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/menu/menu.xml" value="0.12864583333333332" />
