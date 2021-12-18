@@ -7,11 +7,13 @@ public class User {
     private String email;
     private String password;
     private String imageURL;
+    private String search;
 
-    public User (String id, String username, String imageURL){
+    public User (String id, String username, String imageURL, String search){
         this.id = id;
         this.username = username;
         this.imageURL = imageURL;
+        this.search = search;
     }
 
     public User() {
@@ -56,5 +58,13 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getSearch() {
+        return search;
+    }
+
+    public void setSearch(String search) {
+        this.search = search;
     }
 }
