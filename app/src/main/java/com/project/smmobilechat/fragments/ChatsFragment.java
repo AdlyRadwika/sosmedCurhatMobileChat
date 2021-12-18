@@ -24,7 +24,9 @@ import com.project.smmobilechat.Model.User;
 import com.project.smmobilechat.R;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 
 public class ChatsFragment extends Fragment {
@@ -38,7 +40,6 @@ public class ChatsFragment extends Fragment {
     DatabaseReference reference;
 
     private List<String> usersList;
-
 
 
     @Override
@@ -58,24 +59,42 @@ public class ChatsFragment extends Fragment {
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+
                 usersList.clear();
 
-                for(DataSnapshot snapshot : dataSnapshot.getChildren()){
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+
                     Chat chat = snapshot.getValue(Chat.class);
 
-                    if(chat.getSender().equals(fuser.getUid())){
+                    assert chat != null;
+                    if (chat.getSender().equals(fuser.getUid())) {
+
                         usersList.add(chat.getReceiver());
+
                     }
-                    if(chat.getReceiver().equals(fuser.getUid())){
+
+                    if (chat.getReceiver().equals(fuser.getUid())) {
+
                         usersList.add(chat.getSender());
+
                     }
+
                 }
 
+
+                Set<String> hashSet = new HashSet<String>(usersList);
+                usersList.clear();
+                usersList.addAll(hashSet);
+
+
                 readChats();
+
+
             }
 
             @Override
-            public void onCancelled(@NonNull DatabaseError error) {
+            public void onCancelled(@NonNull DatabaseError databaseError) {
 
             }
         });
@@ -83,7 +102,9 @@ public class ChatsFragment extends Fragment {
         return view;
     }
 
-    private void readChats(){
+
+    private void readChats() {
+
         mUsers = new ArrayList<>();
 
         reference = FirebaseDatabase.getInstance().getReference("Users");
@@ -91,35 +112,38 @@ public class ChatsFragment extends Fragment {
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                mUsers.clear();
 
-                for (DataSnapshot snapshot: dataSnapshot.getChildren()){
+                //mUsers.clear();
+
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+
                     User user = snapshot.getValue(User.class);
 
-                    //display user from chat
-                    for (String id : usersList){
-                        if (user.getId().equals(id)){
-                            if (mUsers.size() != 0){
-                                for (User user1 : mUsers){
-                                    if (!user.getId().equals(user1.getId())){
-                                        mUsers.add(user);
-                                    }
-                                }
-                            } else {
-                                mUsers.add(user);
-                            }
+                    for (String id : usersList) {
+
+                        assert user != null;
+                        if (user.getId().equals(id)) {
+
+                            mUsers.add(user);
+
                         }
+
                     }
+
                 }
 
                 userAdapter = new UserAdapter(getContext(), mUsers);
                 recyclerView.setAdapter(userAdapter);
+
+
             }
 
             @Override
-            public void onCancelled(@NonNull DatabaseError error) {
+            public void onCancelled(@NonNull DatabaseError databaseError) {
 
             }
         });
+
+
     }
 }
