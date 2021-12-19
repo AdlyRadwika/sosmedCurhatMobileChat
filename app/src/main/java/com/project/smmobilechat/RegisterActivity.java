@@ -24,7 +24,7 @@ import com.project.smmobilechat.Model.User;
 import com.rengwuxian.materialedittext.MaterialEditText;
 
 import java.util.HashMap;
-
+import java.util.Locale;
 
 
 public class RegisterActivity extends AppCompatActivity {
@@ -74,8 +74,9 @@ public class RegisterActivity extends AppCompatActivity {
                                     assert firebaseUser != null;
                                     String userid = firebaseUser.getUid();
                                     String imageURL = "default";
+                                    String search = txt_username.toLowerCase();
 
-                                    User user = new User(userid, txt_username, imageURL);
+                                    User user = new User(userid, txt_username, imageURL, search);
 
 
                                     FirebaseDatabase.getInstance("https://sosmedcurhatmobilechat-166c7-default-rtdb.asia-southeast1.firebasedatabase.app/")
