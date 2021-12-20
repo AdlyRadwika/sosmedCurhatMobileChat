@@ -31,8 +31,8 @@ public class EditActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit);
 
-        etMessage = (EditText) findViewById(R.id.et_message);
-        btSubmit = (Button) findViewById(R.id.bt_submit);
+        etMessage =  findViewById(R.id.et_message);
+        btSubmit =  findViewById(R.id.bt_submit);
 
         reference = FirebaseDatabase.getInstance("https://sosmedcurhatmobilechat-166c7-default-rtdb.asia-southeast1.firebasedatabase.app/")
                 .getReference("Chats");
