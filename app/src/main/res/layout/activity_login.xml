@@ -15,6 +15,7 @@
 
         <ImageView
             android:id="@+id/imageView"
+            android:layout_marginTop="75dp"
             android:layout_width="match_parent"
             android:layout_height="189dp"
             app:srcCompat="@mipmap/img_logo_sosmed" />
@@ -75,10 +76,10 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_login"
-            android:layout_width="205dp"
-            android:layout_height="60dp"
+            android:layout_width="196dp"
+            android:layout_height="51dp"
             android:layout_marginTop="20dp"
-            android:background="@drawable/custom_button_light"
+            android:background="@drawable/custom_button_orange_light"
             android:text="Login"
             android:textColor="#fff"
             android:textStyle="bold" />
