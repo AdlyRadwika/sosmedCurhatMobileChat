@@ -44,7 +44,7 @@
         android:layout_height="match_parent"
         android:layout_above="@+id/bottom"
         android:layout_below="@+id/bar_layout"
-        android:background="@color/teal_700"/>
+        android:background="@color/teal_700" />
 
     <RelativeLayout
         android:layout_width="match_parent"
