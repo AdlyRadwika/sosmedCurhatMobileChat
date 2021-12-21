@@ -16,6 +16,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/colorAccent"
         android:theme="@style/Base.CardView">
 
         <de.hdodenhof.circleimageview.CircleImageView
@@ -38,36 +39,39 @@
 </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/recycler_view"
+        android:layout_above="@+id/bottom"
         android:layout_below="@+id/bar_layout"
-        android:layout_above="@+id/bottom"/>
+        android:background="@color/teal_700"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:padding="5dp"
         android:id="@+id/bottom"
-        android:background="#fff"
+        android:background="@color/colorAccent"
         android:layout_alignParentBottom="true"
         android:layout_height="wrap_content">
 
         <EditText
+            android:id="@+id/text_send"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/text_send"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_send"
             android:background="@android:color/transparent"
             android:hint="Type your message..."
-            android:layout_toLeftOf="@+id/btn_send"
-            android:layout_centerVertical="true"/>
+            android:textColorHint="@color/gray"
+            android:textColor="@color/white"/>
 
         <ImageButton
+            android:id="@+id/btn_send"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:background="@drawable/ic_action_send"
-            android:id="@+id/btn_send"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"/>
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_send_light" />
 
     </RelativeLayout>
 

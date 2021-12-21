@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -29,7 +30,7 @@ import java.util.Locale;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    MaterialEditText username,email,password,confPass;
+    EditText username,email,password,confPass;
     Button btn_register;
 
     FirebaseAuth auth;
@@ -110,5 +111,9 @@ public class RegisterActivity extends AppCompatActivity {
         });
 
 
+    }
+
+    public void toLogin(View view){
+        startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
     }
 }

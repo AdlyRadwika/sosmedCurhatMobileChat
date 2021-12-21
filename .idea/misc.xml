@@ -3,25 +3,45 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/drawable-anydpi/ic_action_send.xml" value="0.240625" />
+        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/drawable-anydpi/ic_person.xml" value="0.23897435897435898" />
+        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/drawable-anydpi/ic_send_light.xml" value="0.240625" />
+        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.13697916666666668" />
         <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/drawable/background_left.xml" value="0.13020833333333334" />
         <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/drawable/background_right.xml" value="0.13020833333333334" />
-        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/activity_edit.xml" value="0.22" />
+        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/drawable/custom_button.xml" value="0.240625" />
+        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/drawable/custom_button_blue.xml" value="0.19322916666666667" />
+        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/drawable/custom_button_light.xml" value="0.19322916666666667" />
+        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/drawable/ic_launcher_background.xml" value="0.13697916666666668" />
+        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/drawable/logo_sosmed_background.xml" value="0.13697916666666668" />
+        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/activity_edit.xml" value="0.25" />
         <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/activity_login2.xml" value="0.33" />
-        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/activity_message.xml" value="0.15" />
+        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/activity_message.xml" value="0.25" />
         <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/activity_register.xml" value="0.25" />
-        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/activity_start.xml" value="0.18020833333333333" />
+        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/activity_start.xml" value="0.25" />
         <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/bar_layout.xml" value="0.18020833333333333" />
-        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/chat_item_left.xml" value="0.1140625" />
-        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/chat_item_right.xml" value="0.1140625" />
-        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/dialog_view.xml" value="0.33" />
-        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/fragment_chats.xml" value="0.1" />
+        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/chat_item_left.xml" value="0.25" />
+        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/chat_item_right.xml" value="0.25" />
+        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/dialog_view.xml" value="0.25" />
+        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/fragment_chats.xml" value="0.22" />
         <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/fragment_users.xml" value="0.25" />
         <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/layout/user_item.xml" value="0.25" />
-        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/menu/menu.xml" value="0.12864583333333332" />
+        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/menu/menu.xml" value="0.33" />
         <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/mipmap-anydpi-v26/ic_banner.xml" value="0.14166666666666666" />
-        <entry key="..\:/Users/ASUS TUF/OneDrive/Documents/GitHub/sosmedCurhatMobileChat/app/src/main/res/layout/user_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.13697916666666668" />
+        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.13697916666666668" />
+        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/mipmap-anydpi-v26/logo_sosmed.xml" value="0.13697916666666668" />
+        <entry key="..\:/KULIAH/penting/Semester 3/PROJECT 3/smMobileChat/app/src/main/res/mipmap-anydpi-v26/logo_sosmed_round.xml" value="0.13697916666666668" />
+        <entry key="..\:/Users/Asus/sosmedCurhatMobileChat/app/src/main/res/drawable/custom_button_blue.xml" value="0.24259259259259258" />
+        <entry key="..\:/Users/Asus/sosmedCurhatMobileChat/app/src/main/res/drawable/custom_button_orange_dark.xml" value="0.24259259259259258" />
+        <entry key="..\:/Users/Asus/sosmedCurhatMobileChat/app/src/main/res/drawable/custom_button_orange_light.xml" value="0.24259259259259258" />
+        <entry key="..\:/Users/Asus/sosmedCurhatMobileChat/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/Users/Asus/sosmedCurhatMobileChat/app/src/main/res/layout/activity_message.xml" value="0.264" />
+        <entry key="..\:/Users/Asus/sosmedCurhatMobileChat/app/src/main/res/layout/activity_register.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/Asus/sosmedCurhatMobileChat/app/src/main/res/layout/activity_start.xml" value="0.264" />
+        <entry key="..\:/Users/Asus/sosmedCurhatMobileChat/app/src/main/res/layout/user_item.xml" value="0.264" />
       </map>
     </option>
   </component>

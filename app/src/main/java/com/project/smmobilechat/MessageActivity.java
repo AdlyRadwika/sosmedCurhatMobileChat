@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -117,7 +118,7 @@ public class MessageActivity extends AppCompatActivity implements MessageAdapter
                 User user = snapshot.getValue(User.class);
                 username.setText(user.getUsername());
                 if (user.getImageURL().equals("default")){
-                    profile_image.setImageResource(R.mipmap.ic_launcher);
+                    profile_image.setImageResource(R.drawable.ic_person);
                 } else {
                     Glide.with(MessageActivity.this).load(user.getImageURL()).into(profile_image);
                 }
@@ -131,34 +132,6 @@ public class MessageActivity extends AppCompatActivity implements MessageAdapter
             }
         });
     }
-
-//    public static String getMd5(String input)
-//    {
-//        try {
-//
-//            // Static getInstance method is called with hashing MD5
-//            MessageDigest md = MessageDigest.getInstance("MD5");
-//
-//            // digest() method is called to calculate message digest
-//            //  of an input digest() return array of byte
-//            byte[] messageDigest = md.digest(input.getBytes());
-//
-//            // Convert byte array into signum representation
-//            BigInteger no = new BigInteger(1, messageDigest);
-//
-//            // Convert message digest into hex value
-//            String hashtext = no.toString(16);
-//            while (hashtext.length() < 32) {
-//                hashtext = "0" + hashtext;
-//            }
-//            return hashtext;
-//        }
-//
-//        // For specifying wrong message digest algorithms
-//        catch (NoSuchAlgorithmException e) {
-//            throw new RuntimeException(e);
-//        }
-//    }
 
     private void sendMessage(String sender, String receiver, String message){
 
@@ -217,9 +190,9 @@ public class MessageActivity extends AppCompatActivity implements MessageAdapter
                     public void onComplete(@NonNull Task<Void> task) {
 
                         if (task.isSuccessful()) {
-                            Toast.makeText(MessageActivity.this, "User registered successfully", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MessageActivity.this, "Message updated", Toast.LENGTH_SHORT).show();
                         } else {
-                            Toast.makeText(MessageActivity.this, "Registration failed!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MessageActivity.this, "Failed", Toast.LENGTH_SHORT).show();
                         }
 
                     }

@@ -5,19 +5,24 @@
     android:orientation="vertical"
     android:padding="10dp"
     android:gravity="center"
+    android:background="@color/teal_700"
     >
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bt_edit_data"
-        android:layout_width="wrap_content"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:text="Edit" />
-    <Button
-        android:layout_margin="5dp"
+        android:text="Edit Message"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_button"/>
+
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bt_delete_data"
-        android:layout_width="wrap_content"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:text="Delete"
-        />
+        android:layout_margin="5dp"
+        android:text="Delete Message"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_button"/>
 </LinearLayout>
