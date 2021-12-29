@@ -107,6 +107,7 @@ public class MessageActivity extends AppCompatActivity implements MessageAdapter
                 }else{
                     Toast.makeText(MessageActivity.this, "You can't send an empty message", Toast.LENGTH_SHORT).show();
                 }
+                
             }
         }
 
