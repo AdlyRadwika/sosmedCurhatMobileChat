@@ -91,7 +91,7 @@ public class MessageActivity extends AppCompatActivity implements MessageAdapter
         intent = getIntent();
         final String userid = intent.getStringExtra("userid");
         fuser = FirebaseAuth.getInstance().getCurrentUser();
-        reference = FirebaseDatabase.getInstance("https://sosmedcurhatmobilechat-166c7-default-rtdb.asia-southeast1.firebasedatabase.app/")
+        reference = FirebaseDatabase.getInstance("https://chatting-app-d29ad-default-rtdb.asia-southeast1.firebasedatabase.app/")
                                     .getReference("Users")
                                     .child(userid);
         chat = (Chat) getIntent().getSerializableExtra("data");
@@ -136,7 +136,7 @@ public class MessageActivity extends AppCompatActivity implements MessageAdapter
 
     private void sendMessage(String sender, String receiver, String message){
 
-        DatabaseReference reference = FirebaseDatabase.getInstance("https://sosmedcurhatmobilechat-166c7-default-rtdb.asia-southeast1.firebasedatabase.app/")
+        DatabaseReference reference = FirebaseDatabase.getInstance("https://chatting-app-d29ad-default-rtdb.asia-southeast1.firebasedatabase.app/")
                                     .getReference();
 
         HashMap<String, Object> hashMap = new HashMap<>();
@@ -152,7 +152,7 @@ public class MessageActivity extends AppCompatActivity implements MessageAdapter
     private void readMessages (String myid, String userid, String imageurl){
         mchat = new ArrayList<>();
 
-        reference = FirebaseDatabase.getInstance("https://sosmedcurhatmobilechat-166c7-default-rtdb.asia-southeast1.firebasedatabase.app/")
+        reference = FirebaseDatabase.getInstance("https://chatting-app-d29ad-default-rtdb.asia-southeast1.firebasedatabase.app/")
                                     .getReference("Chats");
         reference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -182,7 +182,7 @@ public class MessageActivity extends AppCompatActivity implements MessageAdapter
  * Baris kode yang digunakan untuk mengupdate data barang
  * yang sudah dimasukkan di Firebase Realtime Database
  */
-       FirebaseDatabase.getInstance("https://sosmedcurhatmobilechat-166c7-default-rtdb.asia-southeast1.firebasedatabase.app/")
+       FirebaseDatabase.getInstance("https://chatting-app-d29ad-default-rtdb.asia-southeast1.firebasedatabase.app/")
                 .getReference("Chats")
                 .child(chat.getKey()) //select barang berdasarkan key
                 .setValue(chat) //set value barang yang baru
@@ -208,7 +208,7 @@ public class MessageActivity extends AppCompatActivity implements MessageAdapter
     @Override
     public void onDeleteData(Chat chat, final int position) {
 
-        reference = FirebaseDatabase.getInstance("https://sosmedcurhatmobilechat-166c7-default-rtdb.asia-southeast1.firebasedatabase.app/")
+        reference = FirebaseDatabase.getInstance("https://chatting-app-d29ad-default-rtdb.asia-southeast1.firebasedatabase.app/")
                     .getReference();
 
         if(reference!=null){

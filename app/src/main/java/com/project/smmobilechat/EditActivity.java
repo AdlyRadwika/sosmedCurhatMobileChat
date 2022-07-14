@@ -34,7 +34,7 @@ public class EditActivity extends AppCompatActivity{
         etMessage =  findViewById(R.id.et_message);
         btSubmit =  findViewById(R.id.bt_submit);
 
-        reference = FirebaseDatabase.getInstance("https://sosmedcurhatmobilechat-166c7-default-rtdb.asia-southeast1.firebasedatabase.app/")
+        reference = FirebaseDatabase.getInstance("https://chatting-app-d29ad-default-rtdb.asia-southeast1.firebasedatabase.app/")
                 .getReference("Chats");
 
         chat = (Chat) getIntent().getSerializableExtra("data");
