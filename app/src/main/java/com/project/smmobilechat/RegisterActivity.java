@@ -80,7 +80,7 @@ public class RegisterActivity extends AppCompatActivity {
                                     User user = new User(userid, txt_username, imageURL, search);
 
 
-                                    FirebaseDatabase.getInstance("https://sosmedcurhatmobilechat-166c7-default-rtdb.asia-southeast1.firebasedatabase.app/")
+                                    FirebaseDatabase.getInstance("https://chatting-app-d29ad-default-rtdb.asia-southeast1.firebasedatabase.app/")
                                             .getReference("Users")
                                             .child(userid)
                                             .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {

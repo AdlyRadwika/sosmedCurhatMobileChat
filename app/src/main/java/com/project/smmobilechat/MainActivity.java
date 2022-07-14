@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         String userid = firebaseUser.getUid();
 
-        reference = FirebaseDatabase.getInstance("https://sosmedcurhatmobilechat-166c7-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("Users").child(userid);
+        reference = FirebaseDatabase.getInstance("https://chatting-app-d29ad-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("Users").child(userid);
 
         reference.addValueEventListener(new ValueEventListener() {
             @Override
